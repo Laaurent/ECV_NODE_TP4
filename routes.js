@@ -51,6 +51,6 @@ module.exports = function (app) {
    //Question - 9
    app.get("/users", user_controller.index);
    app.get("/users/:id", user_controller.getUser);
-   app.put("/user", user_controller.createUser);
-   app.delete("/user/:id", user_controller.deleteUser);
+   app.post("/users", user_controller.createUser);
+   app.delete("/users/:id", user_controller.deleteUser);
 };
